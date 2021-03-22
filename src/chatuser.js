@@ -6,7 +6,6 @@ const Room = require('./Room');
 /** ChatUser is a individual connection from client -> server to chat. */
 
 class ChatUser {
-  /** make chat: store connection-device, rooom */
 
   constructor(send, roomName) {
     this._send = send; // "send" function for this user
