@@ -3,7 +3,7 @@
 // Room is an abstraction of a chat channel
 
 // import Room from "./room.js";
-const Room = require('./Room');
+const {Room} = require('./room');
 
 /** ChatUser is a individual connection from client -> server to chat. */
 
@@ -70,6 +70,6 @@ class ChatUser {
     });
   }
 }
-
-module.exports = ChatUser;
+module.exports = { ChatUser }
+// module.exports = ChatUser;
 // export default ChatUser;
