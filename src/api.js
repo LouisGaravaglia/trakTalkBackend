@@ -7,7 +7,7 @@ const serverless = require('serverless-http');
 
 router.get('/test', (req, res) => res.send('Hello World From Express Server'))
 
-const ChatUser = require('../ChatUser');
+const ChatUser = require('./ChatUser');
 
 router.ws('/chat/:roomName', function(ws, req, next) {
     console.log('hit chat in backend');
