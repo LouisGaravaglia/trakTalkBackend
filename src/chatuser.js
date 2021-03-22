@@ -70,4 +70,5 @@ class ChatUser {
   }
 }
 
-module.exports = ChatUser;
+// module.exports = ChatUser;
+export default ChatUser;
