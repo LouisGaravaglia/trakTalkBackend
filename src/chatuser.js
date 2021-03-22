@@ -1,7 +1,8 @@
 /** Functionality related to chatting. */
 
 // Room is an abstraction of a chat channel
-const Room = require('./Room');
+import Room from "./room";
+// const Room = require('./Room');
 
 /** ChatUser is a individual connection from client -> server to chat. */
 
