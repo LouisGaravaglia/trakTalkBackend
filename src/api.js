@@ -4,11 +4,11 @@ const router = express.Router()
 const expressWs = require('express-ws')(app);
 app.use(express.static(__dirname + '/public'));
 const serverless = require('serverless-http');
-import ChatUser from "./chatuser"
+// import ChatUser from "./chatuser.js"
 
 router.get('/test', (req, res) => res.send('Hello World From Express Server'))
 
-// const ChatUser = require('./ChatUser');
+const ChatUser = require('./ChatUser');
 
 router.ws('/chat/:roomName', function(ws, req, next) {
     console.log('hit chat in backend');

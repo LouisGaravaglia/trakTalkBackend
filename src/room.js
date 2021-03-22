@@ -53,5 +53,5 @@ class Room {
   }
 }
 
-// module.exports = Room;
-export default Room;
+module.exports = Room;
+// export default Room;
